@@ -7,18 +7,14 @@ body{
     padding: 0;
     box-sizing: border-box;
     display : flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
 }
 
 main{
-    display: flex;
-    flex-direction: column;
+  margin: auto;
     height: 90vh;
     width: 700px;
-    margin: 0px auto;
-    background-color: white;
+    background-color: rgb(233, 230, 230);
     border-radius: 20px;
     overflow-x: hidden;
     resize: none;
@@ -33,7 +29,6 @@ main::-webkit-scrollbar {
 
 main::-webkit-scrollbar-thumb {
   background-color: #888; /* Color of the scrollbar thumb */
-  
 }
 
 /* Thumb on hover */
@@ -48,32 +43,24 @@ main::-webkit-scrollbar-track {
   
 }
 
-main header{
-  display: flex;
-  gap: 10px;
-  background-color: rgb(120, 182, 236);
-  padding: 0px;
-  height: 10%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
- 
-}
 
 main header h1{
+  text-align: center;
   font-size: 3rem;
   font-weight: 300;
-  margin : 0;
   font-family: "Leckerli One", serif;
-  color: rgb(239, 244, 244);
+  color: rgb(120, 182, 236);
+  margin: 0;
+  margin-top: 10px;
 }
 
 
-main .tweetArea{
+main .twimba-container .tweetArea-container{
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  margin-bottom: 20px;
 }
 
 main .tweetArea img{
@@ -87,19 +74,16 @@ main .tweetArea textarea{
   font-size: 1rem;
   padding: 10px;
   border: none;
-  border-bottom: 1px solid rgb(120, 182, 236);
+  border-bottom: 5px solid rgb(120, 182, 236);
   border-radius: 10px;
   resize: none;
   margin: 10px;
 }
 
-main .twimba-container .tweetArea-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
+main .tweetArea textarea:focus{
+  outline: none;
 }
+
 
 
 main .twimba-container .tweetArea-container button{
