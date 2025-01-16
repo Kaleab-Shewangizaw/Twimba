@@ -1,28 +1,35 @@
+import { v4 as uuidv4 } from 'uuid';
+
+
 export const tweetsData = [{
   handle: "Kaleab Shewangizaw",
   profilePic: "./images/pp1.jpg",
+  id: uuidv4(),
   likes: 100,
   retweets: 200,
   tweetText: "Here I am tweeting about something that I don't know about. #coding #javascript #reactjs",
   replies: [
     {
-      handle: "John Doe",
+      handle: "Elon Musk",
       profilePic: "./images/pp2.jpg",
+      id: uuidv4(),
       likes: 10,
       retweets: 20,
       tweetText: "I am replying to your tweet. #coding #javascript #reactjs",
     },
     {
-      handle: "Jane Doe",
+      handle: "Github",
       profilePic: "./images/pp3.jpg",
+      id: uuidv4(),
       likes: 10,
       retweets: 20,
       tweetText: "I am also replying to your tweet. #coding #javascript #reactjs",
     }
 ]},
 {
-  handle: "John Doe",
+  handle: "Elon Musk",
   profilePic: "./images/pp2.jpg",
+  id: uuidv4(),
   likes: 100,
   retweets: 200,
   tweetText: "Here I am tweeting about something that I don't know about. #coding #javascript #reactjs",
@@ -30,21 +37,24 @@ export const tweetsData = [{
     {
       handle: "Kaleab Shewangizaw",
       profilePic: "./images/pp1.jpg",
+      id: uuidv4(),
       likes: 10,
       retweets: 20,
       tweetText: "I am replying to your tweet. #coding #javascript #reactjs",
     },
     {
-      handle: "Jane Doe",
+      handle: "Github",
       profilePic: "./images/pp3.jpg",
+      id: uuidv4(),
       likes: 10,
       retweets: 20,
       tweetText: "I am also replying to your tweet. #coding #javascript #reactjs",
     }
 ]},
 {
-  handle: "Jane Doe",
+  handle: "Github",
   profilePic: "./images/pp3.jpg",
+  id: uuidv4(),
   likes: 100,
   retweets: 200,
   tweetText: "Here I am tweeting about something that I don't know about. #coding #javascript #reactjs",
@@ -52,6 +62,7 @@ export const tweetsData = [{
     {
       handle: "Kaleab Shewangizaw",
       profilePic: "./images/pp1.jpg",
+      id: uuidv4(),
       likes: 10,
       retweets: 20,
       tweetText: "I am replying to your tweet. #coding #javascript #reactjs",
@@ -59,30 +70,20 @@ export const tweetsData = [{
     {
       handle: "John Doe",
       profilePic: "./images/pp2.jpg",
+      id: uuidv4(),
       likes: 10,
       retweets: 20,
       tweetText: "I am also replying to your tweet. #coding #javascript #reactjs",
     }
 ]},
 {
-  handle: "Kaleab Shewangizaw",
+  handle: "Someone",
   profilePic: "./images/pp1.jpg",
+  id: uuidv4(),
   likes: 100,
   retweets: 200,
   tweetText: "Here I am tweeting about something that I don't know about. #coding #javascript #reactjs",
-  replies: [
-    {
-      handle: "John Doe",
-      profilePic: "./images/pp2.jpg",
-      likes: 10,
-      retweets: 20,
-      tweetText: "I am replying to your tweet. #coding #javascript #reactjs",
-    },
-    {
-      handle: "Jane Doe",
-      profilePic: "./images/pp3.jpg",
-      likes: 10,
-      retweets: 20,
-      tweetText: "I am also replying to your tweet. #coding #javascript #reactjs",
-    }]
+  replies: []
 }];
+
+
