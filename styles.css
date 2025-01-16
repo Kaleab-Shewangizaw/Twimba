@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+
+body{
+    background-color: rgb(23, 21, 21);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 700px;
+    margin: 0px auto;
+    background-color: white;
+    border-radius: 20px;
+    overflow-x: hidden;
+    resize: none;
+    box-sizing: border-box;
+    
+}
+
+main::-webkit-scrollbar {
+  width: 15px;
+  border-left: none;
+}
+
+main::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  
+}
+
+/* Thumb on hover */
+main::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color on hover */
+}
+
+/* Track */
+main::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+  border-radius: 10px; /* Rounded corners */
+  
+}
+
+main header{
+  display: flex;
+  gap: 10px;
+  background-color: rgb(120, 182, 236);
+  padding: 0px;
+  height: 10%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+main header h1{
+  font-size: 3rem;
+  font-weight: 300;
+  margin : 0;
+  font-family: "Leckerli One", serif;
+  color: rgb(239, 244, 244);
+}
+
+
+main .tweetArea{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+main .tweetArea img{
+  width: 30%;
+  border-radius: 50%;
+}
+
+main .tweetArea textarea{
+  width: 60%;
+  height: 100px;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid rgb(120, 182, 236);
+  border-radius: 10px;
+  resize: none;
+  margin: 10px;
+}
+
+main .twimba-container .tweetArea-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+main .twimba-container .tweetArea-container button{
+  width: 100px;
+  height: 40px;
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgb(120, 182, 236);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+main .twimba-container .tweetArea-container button:hover{
+  background-color: rgb(0, 0, 255);
+}
+
+main .twimba-container hr{
+  width: 90%;
+  margin-top: 20px;
+}

@@ -3,4 +3,5 @@ import { tweetsData } from './data.js';
 
 
 
-console.log(tweetsData[0]);
+
+const feedHTML = ''
